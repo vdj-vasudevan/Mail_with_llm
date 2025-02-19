@@ -5,3 +5,5 @@
 *.key
 
 .key
+
+*.pyc

@@ -74,7 +74,15 @@ def send_email(to, subject, body):
 
 mail = login()
 Data = check_email(mail)
-sender_email = Data.split("\n")[0]
+Data_list = Data.split("\n")
+sender_email = Data_list[0]
+sender_data  = "\n".join(Data_list[1:])
+
+# implement Agent logi here
+
+# use Schedule utility to get schedule data
+
+# send email
 logout(mail)
 send_email(sender_email, "Hello!", "This is a test email....")
 
