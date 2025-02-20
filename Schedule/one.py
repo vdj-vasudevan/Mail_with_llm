@@ -22,6 +22,7 @@ HEADERS_TEMPLATE = {
 }
 
 def get_one_schedule(origin, destination, from_date=None, to_date=None):
+    # CHECK FROM CACHE 
     current_date = datetime.now()
     ct_tm = ct_to_one_fmt()
 
